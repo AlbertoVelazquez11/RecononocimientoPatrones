@@ -1,0 +1,12 @@
+IDENTIFICACIÓN DE PERSONAS POR CONCIDENCIAS EN DESCRIPCIÓN
+
+DETALLES: Dada información de un individuo, describiendo carácteristicas básicas así 
+como detalles específicos, hacer una comparación de registros de personas en una base
+de conocimiento con el fin de hacer una evaluación y por medio de porcentaje, mostrar los
+resultados con un umbral establecido en orden de mayor a menor coincidencia.
+
+Referente al umbral que se debe establecer, se priorizará en las carácteristicas básicas
+que son simples de identifiacar claramente y disminuye el margen de error, seguido de los
+detalles específicos, la ponderación que se le asignará debe ser flexible a cambios y su
+evaluación consistirá en determinar el número de concidencias.
+

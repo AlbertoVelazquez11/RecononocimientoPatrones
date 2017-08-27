@@ -1,0 +1,81 @@
+GIT: Creación de repositorios
+GitHub: Compartir repositorios en la nube
+
+Caracteristicas.-
+Creado en 2005 por Linus Torvalds
+Open Source
+Compatible con distintos S.O.
+Más utilizado y rapido
+desarrollado para trabajar con archivos de texto
+
+Ofrece:
+Llevar control de ediciones
+Revisar el registro de cambios (log o bitacora)
+Ver diferencias entre versiones
+Restaurar versiones
+Colaboración entre desarrolladores
+
+
+1.-Instalar Git
+2.-Configuración básica
+COMANDOS
+git --version (version instalada de git)
+git config --global user.name "alberto11"
+git config --global user.email alberto.velazquez9211@gmail.com
+git config --global core.editor atom
+git config --list
+
+INICIALIZAR UN REPOSITORIO
+1.-Crear la carpeta contenedora y situarse en la ruta en consola
+git status (checar si es un repositorio)
+git init (establece la carpeta como raiz de un repositorio)
+dir (verificar contenido)
+cd .git (carpeta oculta)
+
+AÑADIR ARCHIVOS,STATUS y COMMIT
+crear archivos en el directorio raiz del git (se puede hacer directo en atom)
+git add [nombre del archivo.extension]
+verificar cambios con "git status"
+un commit para crear un "checkpoint" de avance
+git commit -m "mensaje descriptivo de la accíon"
+git add . (agrega todos los archivos con cambios y los nuevos)
+verificar cambios con status
+
+USAR EL ENTORNO STAGING
+git checkout -- [nobre del archivo] (restaurar modificaciones del archivo cuando no este en staging)
+git reset HEAD [nombre del archivo.extension] (omitir del commit/cambios sin confirmar cuando este en staging)
+
+IGNORAR ARCHIVOS
+crear un archivo con el nombre de .gitignore
+agregar el nombre de las carpetas o archivos que desea ignorar
+git add .
+git commit - m "añade gitignore al proyecto"
+
+BORRAR ARCHIVOS
+los archivos borrados aparecen en status
+git checkout -- [nobre del archivo] (restaura archivos borrados)
+git rm [nombre del archivo.extension] (borra archivo y necesita confirmar con commit)
+
+
+TRABAJAR CON EL LOG
+git log
+git checkout [hash del commit]
+
+USAR RAMAS (BRANCH)
+git checkout -b [nombre del nuevo branch]
+git branch
+git checkout [nombre del branch]
+confirmar cambios antes de cambiar de branch
+git branch -d [nombre del branch] (eliminar un branch si ya hizo merge con master)
+git branch -D [nombre del branch] (eliminar un branch sin hacer merge con master)
+
+MERGE
+estar en master para integrar la rama deseada
+git merge [nombre del merge]
+
+==GITHUB==
+git remote add origin [URL del proyecto.git] (ligar repositorio local con el de en linea)
+git push -u origin master (primera vez para actualizar el repositorio en linea)
+git push origin master (actualizar repositorio en linea)
+git clone [URL del proyecto .git]
+git pull origin master

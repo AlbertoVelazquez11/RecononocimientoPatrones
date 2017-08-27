@@ -1,0 +1,44 @@
+Un algoritmo que sea capaz de identificar los patrones en descripciones 
+de personas y asociarlas por porcentaje de coincidencias, ya sea que la 
+comparacion sea en una base de datos de las personas ya identificadas o
+con otras descripciones aun sin asociar a una persona, de esta manera alimentar
+la base de conocimiento.
+
+Consiste en capturar la descripcion aproximada del individuo asi como detalles
+del entorno, por ejemplo.
+
+Del INDIVIDUO:
+Altura
+Complexion
+Tez
+Rasgos(Cicatriz, Lunares, TipoRostro)
+Cabello
+-Tipo
+-Color
+Vestimenta(Color de ropa, Calzado)
+
+Del ENTORNO
+Lugar
+Hora
+Dia de la Semana
+Transporte (Pie, Camion, Auto)
+Huida (En que huyo, direccion)
+Sutraido (Dinero, Celular, Cartera[Tarjetas,Identificaciones], Auto , Joyeria, Otro)
+
+Una vez teniendo estos datos, se comparara con personas ya identificadas en la base
+conocimiento y si no se establece un resultado satisfactorio, se compara con otras 
+descripciones aun sin relacionar, y se determina que hay la posibilidad de ser la 
+descipcion del mismo sujeto.
+
+IDENTIFICACIÓN DE PERSONAS POR CONCIDENCIAS EN DESCRIPCIÓN (Análisis V2)
+
+DETALLES: Dada información de un individuo, describiendo carácteristicas básicas así 
+como detalles específicos, hacer una comparación de registros de personas en una base
+de conocimiento con el fin de hacer una evaluación y por medio de porcentaje, mostrar los
+resultados con un umbral establecido en orden de mayor a menor coincidencia.
+
+Referente al umbral que se debe establecer, se priorizará en las carácteristicas básicas
+que son simples de identifiacar claramente y disminuye el margen de error, seguido de los
+detalles específicos, la ponderación que se le asignará debe ser flexible a cambios y su
+evaluación consistirá en determinar el número de concidencias.
+
